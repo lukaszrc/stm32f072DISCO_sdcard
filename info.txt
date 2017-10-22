@@ -1,0 +1,11 @@
+goal: stm32f072 sd-card handling
+
+hardware:
+stm32f072-discovery board
+sd card adapter
+ELITE PRO memory card 1GB
+
+software tool:
+sw4stm32 (eclipse Version: Neon.3 Release (4.6.3) Build id: 20170314-1500)
+stm32CubeMX ver 4.22.1
+stm32 HAL drivers: RCC, SPI, GPIO

@@ -1,0 +1,4 @@
+TODO:
+make cmd_send function with checking responses
+
+The 2nd step in the initialization is the CMD0 command (GO_IDLE_STATE).  This is achieved by sending over the bytes 0x40, 0x00, 0x00, 0x00, 0x00, 0x95 while /CS is low.  The 0x95 is the CRC for the CMD0 command, one of only ones that require CRC.  Then wait for a response (by sending repeatedly 0xff until getting an answer that is different of 0xff).  The correct response is 0x01, you should get this response in one command cycle with the above function:
